@@ -12,5 +12,5 @@ app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'public', 'index.ht
 
 app.listen(process.env.NODE_DOCKER_PORT, () => {
   console.log(`app listening in port ${process.env.NODE_DOCKER_PORT}`);
-  main();
+  // main();
 });

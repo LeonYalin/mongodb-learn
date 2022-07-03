@@ -7,7 +7,7 @@
     "start": "nodemon",
     "build": "rimraf ./dist && tsc",
     "serve": "npm run build && node dist/app.js",
-    "mysql:cli": "docker exec -it mongodb-learn_mysqldb_1 sh -c 'mysql --user=root --password=root'",
+    "mongo:cli": "docker exec -it mongodb-learn_mongo_1 sh -c 'mongo --host localhost:27017 --username root --password example'",
     "up": "docker-compose up"
   },
   "repository": {
