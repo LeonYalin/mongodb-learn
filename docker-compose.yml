@@ -20,8 +20,9 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
     volumes:
-      - mysql:/var/lib/mysql
-      - mysql_config:/etc/mysql
+      # - mongodb:/var/lib/mongodb
+      # - mongodb_config:/etc/mongodb.conf
+      # - mongodb_logs:/var/log/mongodb/mongodb.log
       - ./src/learn/files:/app/
   mongo-express:
     image: mongo-express
@@ -34,6 +35,6 @@ services:
       ME_CONFIG_MONGODB_URL: mongodb://root:example@mongo:27017/
 
 volumes:
-    mysql:
-    mysql_config:
-    mysql_workbench_config:
+    mongodb:
+    mongodb_config:
+    mongodb_logs:
