@@ -1,0 +1,20 @@
+[
+  {
+    "firstName": "Leon",
+    "lastName": "Yalin",
+    "age": 36,
+    "history": [
+      {"disease": "cold", "treatment": "uh oh"}
+    ]
+  },
+  {
+    "firstName": "Lisa",
+    "lastName": "Yalin",
+    "age": 4,
+    "history": [
+      {"disease": "ponymania", "treatment": "am am"},
+      {"disease": "hunger", "treatment": "nom nom"},
+      {"disease": "cold", "treatment": "brrr"}
+    ]
+  }
+]
