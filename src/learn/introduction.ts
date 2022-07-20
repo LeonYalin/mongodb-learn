@@ -31,6 +31,7 @@ function whatIsMongoDB() {
     - use "db.products.insertOne({name: "Leon"})" to insert one document to colloction & create it if not exists
     - use "db.products.find()" or "db.products.find().pretty()" to view the collection contents
     - use "db.dropDatabase()" and "db.myCollection.drop()" to drop a database/collection
+    - use "db.stats() to output database metadata and stats
 
     JSON vs BSON:
     - BSON stands for Binary JSON + extends JSON types (more data types) + efficient storage
