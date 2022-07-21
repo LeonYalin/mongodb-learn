@@ -8,9 +8,9 @@ services:
       - .:/app/
     ports:
       - $NODE_LOCAL_PORT:$NODE_DOCKER_PORT
-    depends_on: 
+    depends_on:
       - mongo
-    environment: 
+    environment:
       MYSQL_HOST: mongo
   mongo:
     image: mongo
@@ -20,9 +20,7 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
     volumes:
-      # - mongodb:/var/lib/mongodb
-      # - mongodb_config:/etc/mongodb.conf
-      # - mongodb_logs:/var/log/mongodb/mongodb.log
+      - ./src/learn/config/mongod.conf:/etc/mongod.conf
       - ./src/learn/files:/app/
   mongo-express:
     image: mongo-express
@@ -33,8 +31,3 @@ services:
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
       ME_CONFIG_MONGODB_URL: mongodb://root:example@mongo:27017/
-
-volumes:
-    mongodb:
-    mongodb_config:
-    mongodb_logs:
