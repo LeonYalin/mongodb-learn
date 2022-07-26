@@ -3,6 +3,7 @@ import create from './createOperations';
 import introduction from './introduction';
 import read from './readOperations';
 import structuringDocuments from './structuringDocuments';
+import update from './updateOperations';
 
 export function main() {
   introduction();
@@ -10,4 +11,5 @@ export function main() {
   structuringDocuments();
   create();
   read();
+  update();
 }
