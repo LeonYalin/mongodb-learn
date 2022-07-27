@@ -5,6 +5,7 @@ import introduction from './introduction';
 import read from './readOperations';
 import structuringDocuments from './structuringDocuments';
 import update from './updateOperations';
+import indexes from './workingWithIndexes';
 
 export function main() {
   introduction();
@@ -14,4 +15,5 @@ export function main() {
   read();
   update();
   deleteOp();
+  indexes();
 }

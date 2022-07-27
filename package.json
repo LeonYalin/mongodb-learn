@@ -7,7 +7,7 @@
     "start": "nodemon",
     "build": "rimraf ./dist && tsc",
     "serve": "npm run build && node dist/app.js",
-    "import:data": "docker exec -it mongodb-learn_mongo_1 sh -c 'mongoimport /app/users.json -d usersdb -c users --jsonArray --authenticationDatabase admin --username root --password example'",
+    "import:data": "docker exec -it mongodb-learn_mongo_1 sh -c 'mongoimport /app/persons.json -d contactsdb -c contacts --jsonArray --authenticationDatabase admin --username root --password example'",
     "mongo:cli": "docker exec -it mongodb-learn_mongo_1 sh -c 'mongo --host localhost:27017 --username root --password example'",
     "up": "docker-compose up"
   },
