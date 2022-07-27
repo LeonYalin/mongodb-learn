@@ -1,5 +1,6 @@
 import basicCRUD from './basicCRUD';
 import create from './createOperations';
+import deleteOp from './deleteOperations';
 import introduction from './introduction';
 import read from './readOperations';
 import structuringDocuments from './structuringDocuments';
@@ -12,4 +13,5 @@ export function main() {
   create();
   read();
   update();
+  deleteOp();
 }
