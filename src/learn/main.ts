@@ -5,6 +5,7 @@ import introduction from './introduction';
 import read from './readOperations';
 import structuringDocuments from './structuringDocuments';
 import update from './updateOperations';
+import geospatial from './workingWithGeospatialData';
 import indexes from './workingWithIndexes';
 
 export function main() {
@@ -16,4 +17,5 @@ export function main() {
   update();
   deleteOp();
   indexes();
+  geospatial();
 }
