@@ -39,7 +39,7 @@ function crudOperations() {
     - Use "db.myCollection.find().forEach((data) => printjson(data))" to print all the data
 
     Projection:
-    - Use projections to filter the data that is being returner from the DB, to reduce load.
+    - Use projections to filter the data that is being returned from the DB, to reduce load.
     - Using "db.myCollection.find({}, {name: 1}).pretty()" will only fetch a "name" property from each document
     - By default, the "_id" property is always included. To disable this, use "db.myCollection.find({}, {_id: 0})"
 

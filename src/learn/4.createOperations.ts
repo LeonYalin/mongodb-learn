@@ -5,7 +5,7 @@ function createOperations() {
     `Create operations in MongoDB:
 
     - Main create methods are "insertOne(data)" and "insertMany(data)"
-    - There is one more "insert" method, but it is not recommended, because it is not clear if it is oneor many, and no feedback returned
+    - There is one more "insert" method, but it is not recommended, because it is not clear if it is one or many, and no feedback returned
     
 
     Ordered insert

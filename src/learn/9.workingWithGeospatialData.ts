@@ -4,7 +4,7 @@ function workingWithGeospatialData() {
   log(
     `Working with geospatial data in MongoDB:
 
-    - MongoDB supports GroJSON objects standart, which specification can be found in the internet
+    - MongoDB supports GeoJSON objects standart, which specification can be found in the internet
     - The location should be an embedded document and look like this:
       db.coll.insertOne({name: "Tel Aviv", {location: {type: "Point", coordinates: [32.0879267,34.7622266]}}})
     - to work with geo data, we have to have a GeoIndex: "db.coll.createIndex({location: "2dsphere"})"

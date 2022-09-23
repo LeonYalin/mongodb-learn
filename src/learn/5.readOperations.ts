@@ -29,7 +29,7 @@ function readOperations() {
           - $regex: search using regex, e.g. "db.coll.find({ summary: {$regex: /musical/} })" (not performant)
           - $expr: compare using condition expression,e.g.
             db.coll.find({ $expr: {$gt: [{$cond: {if: {$gte: {["$field", 190]}, then: {$subtract: ["$field", 10]}, else: "$field"}}, "$another_field"]} })
-          - $jsonSchema: find an element that has a certin json schema
+          - $jsonSchema: find an element that has a certain json schema
           - $mod: modulo operator
         * Array
           - $size: search for specific array size, e.g. "db.coll.find({ hobbies: {$size: 3} })"
@@ -48,7 +48,7 @@ function readOperations() {
 
     - "Projections" filters allow to narrow the data output
         * The second parameter of the "find" operation allows returning only the relevant fields, to reduce db & network load and fetch time
-          db.coll.find({}, {name: 1, "meta.rating", 1, _id: 0} })
+          db.coll.find({}, {name: 1, "meta.rating": 1, _id: 0} })
         * $: in arrays, show the specific match, e.g. "db.coll.find({ genres: "drama"}, {"genres.$": 1} })"
         * $elemMatch: match the specific array element, e.g. "db.coll.find({ genres: "drama"}, {genres: {$elemMatch: {$eq: "Horror"}}} })"
         * $slice: slice the array to search only on sliced elements, e.g. "db.coll.find({ genres: "drama"}, {genres: {$slice: [1, 2], name: 1}} })"
