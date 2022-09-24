@@ -8,6 +8,7 @@ import update from './6.updateOperations';
 import geospatial from './9.workingWithGeospatialData';
 import indexes from './8.workingWithIndexes';
 import aggregation from './10.aggregationFramework';
+import numericData from './11.workingWithNumericData';
 
 export function main() {
   introduction();
@@ -20,4 +21,5 @@ export function main() {
   indexes();
   geospatial();
   aggregation();
+  numericData();
 }
