@@ -9,6 +9,7 @@ import geospatial from './9.workingWithGeospatialData';
 import indexes from './8.workingWithIndexes';
 import aggregation from './10.aggregationFramework';
 import numericData from './11.workingWithNumericData';
+import security from './12.securityAndAuth';
 
 export function main() {
   introduction();
@@ -22,4 +23,5 @@ export function main() {
   geospatial();
   aggregation();
   numericData();
+  security();
 }
