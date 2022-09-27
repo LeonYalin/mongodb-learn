@@ -42,7 +42,6 @@ function performanceFaultsAndDeployment() {
     
     There is a managed solution from MongoDB, MongoDB Atlas which has a free tier
     - MongoDB Atlas is a database as as service. or cloud db
-    - 
     `,
   );
 }

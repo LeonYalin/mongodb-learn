@@ -11,6 +11,7 @@ import aggregation from './10.aggregationFramework';
 import numericData from './11.workingWithNumericData';
 import security from './12.securityAndAuth';
 import performance from './13.performanceFaultsAndDeployment';
+import transactions from './14.transactions';
 
 export function main() {
   introduction();
@@ -26,4 +27,5 @@ export function main() {
   numericData();
   security();
   performance();
+  transactions();
 }
