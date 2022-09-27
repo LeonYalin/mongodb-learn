@@ -10,6 +10,7 @@ import indexes from './8.workingWithIndexes';
 import aggregation from './10.aggregationFramework';
 import numericData from './11.workingWithNumericData';
 import security from './12.securityAndAuth';
+import performance from './13.performanceFaultsAndDeployment';
 
 export function main() {
   introduction();
@@ -24,4 +25,5 @@ export function main() {
   aggregation();
   numericData();
   security();
+  performance();
 }
