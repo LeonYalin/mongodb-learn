@@ -13,6 +13,10 @@ function workingWithTransactions() {
       usersCol.deleteOne({ _id: ObjectId("5b2afsdfgsd3gjs6ogi78df") })
       postsCol.deleteMany({ _id: ObjectId("5b2afsdfgsd3gjs6ogi78df") })
       session.commitTransaction() // there is also session.abortTransaction()
+
+      Stitch (MongoDB Realm):
+      - stitch is a serverless platform for building applications (similar to Firebase)
+      - it gives access to the cloud db from the client side, authentication, rest api, subscriptions & serverless functions
     `,
   );
 }
